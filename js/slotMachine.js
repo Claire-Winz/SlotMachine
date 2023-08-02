@@ -6,7 +6,7 @@ function showPrice() {
 };
 
 function getRandom() {
-  return Math.floor((Math.random() * 7 ) + 1);
+  return Math.floor(Math.random() * 10);
 };
 
 const button = document.querySelector("#btn");
@@ -30,7 +30,7 @@ button.onclick = function() {
   else {
     seedmoney -= 1000;
 
-    if (num1 == num2 || num1 == num3) {
+    if (num1 == num2 && num1 == num3) {
       seedmoney = seedmoney + (num1 * 5000);
     }
   
